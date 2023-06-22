@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập tổng hợp</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <h2>Thông tin học viên</h2>
+
+        <div>
+          <label for="studentid">Student ID</label>
+          <input
+            type="text"
+            id="studentid"
+            name="studentid"
+            placeholder="hãy nhập ID"
+          />
+        </div>
+        <div>
+          <label for="name">Họ và tên</label>
+          <input type="text" id="name" name="name" placeholder="hãy nhập tên" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="hãy nhập email"
+          />
+        </div>
+        <div>
+          <label for="phone">số điện thoại</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="hãy nhập số điện thoại"
+          />
+        </div>
+        <div>
+          <label for="address">Quê quán</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="hãy nhập quê quán"
+          />
+        </div>
+        <div>
+          <label for="sex">giới tính</label>
+          <div>
+            <input type="radio" id="male" name="sex" value="male" checked />
+            <span> Nam </span>
+            <input type="radio" id="female" name="sex" value="female" />
+            <span>Nu</span>
+          </div>
+        </div>
+        <div><input type="submit" id="btnsave" value="lưu lại" /></div>
+      </form>
+      <!-- table -->
+      <div class="table">
+        <h2>Danh sách học viên</h2>
+        <div>
+          <label for="search"> Tìm kiếm học viên: </label>
+          <input type="search" placeholder="search" id="search" />
+          <input type="submit" id="btnsearch" value="search" />
+        </div>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>studentId</th>
+              <th>Name</th>
+              <th>email</th>
+              <th>Phone</th>
+              <th>address</th>
+              <th>Gender</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
